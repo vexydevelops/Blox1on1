@@ -1,5 +1,59 @@
-# Blox1on1
-this is a 50/50 coin flip adopt me gambling website 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website!</h1>
+    </header>
+    <main>
+        <p>This is a simple webpage created with HTML, CSS, and JavaScript.</p>
+        <button id="clickMeButton">Click me!</button>
+        <p id="outputMessage"></p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#outputMessage {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+document.getElementById('clickMeButton').addEventListener('click', function () {
+    document.getElementById('outputMessage').textContent = 'Button clicked!';
+});
 <!DOCTYPE html>
 <html lang="en">
 <head>
